@@ -34,3 +34,15 @@ Welcome to my personal developer portfolio! This website showcases my skills, pr
 
 ## 📁 Folder Structure
 
+portfolio/
+│
+├── index.html # Main HTML file
+├── style.css # CSS styling
+├── script.js # JavaScript interactivity
+├── resume.pdf # Downloadable resume
+├── /images # Profile and project images
+│ ├── profile.jpg
+│ ├── developer.png
+│ ├── project1.jpg
+│ ├── project2.jpg
+│ └── project3.jpg
