@@ -35,14 +35,17 @@ Welcome to my personal developer portfolio! This website showcases my skills, pr
 ## 📁 Folder Structure
 
 portfolio/
-│
-├── index.html # Main HTML file
-├── style.css # CSS styling
-├── script.js # JavaScript interactivity
-├── resume.pdf # Downloadable resume
-├── /images # Profile and project images
-│ ├── profile.jpg
-│ ├── developer.png
-│ ├── project1.jpg
-│ ├── project2.jpg
-│ └── project3.jpg
+├── index.html            # Main HTML file (landing page)
+├── style.css             # All website styling
+├── script.js             # JavaScript functionality (animations, toggle, scroll, etc.)
+├── resume.pdf            # Resume download button links to this file
+├── /images               # All image assets
+│   ├── profile.jpg           # Your profile picture (about section)
+│   ├── developer.png         # Hero section developer illustration
+│   ├── project1.jpg          # Image for Bus Tracker App
+│   ├── project2.jpg          # Image for PicAlchemy
+│   ├── project3.jpg          # Image for Fraud Detection AI
+│   └── ...                   # Add more project or section images as needed
+├── /fonts                # (Optional) Custom fonts if added locally
+├── /icons                # (Optional) Custom icons if not using CDN
+└── README.md             # Documentation file (this one!)
