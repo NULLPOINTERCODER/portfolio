@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vishal's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-progress"></div>
+  <div id="particles-js"></div>
+  
+  <header>
+    <h1 class="logo">Vishal</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeToggle"><i class="fas fa-moon"></i></button>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+    <div class="hero-content">
+      <h2>Welcome to My <span class="gradient-text">Portfolio</span></h2>
+      <p>I'm a <span class="typewriter"></span></p>
+      <div class="cta-buttons">
+        <button class="primary-btn" onclick="scrollToSection('#contact')">Hire Me</button>
+        <button class="secondary-btn" onclick="window.open('resume.pdf')">Download CV</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" class="developer-illustration">
+        <circle cx="300" cy="120" r="50" fill="#4F46E5" class="head"/>
+        <rect x="250" y="170" width="100" height="120" rx="10" fill="#4F46E5" class="body"/>
+        <rect x="200" y="180" width="40" height="80" rx="10" fill="#4F46E5" class="arm left"/>
+        <rect x="360" y="180" width="40" height="80" rx="10" fill="#4F46E5" class="arm right"/>
+        <rect x="180" y="250" width="240" height="20" rx="5" fill="#E5E7EB" class="laptop-base"/>
+        <rect x="190" y="190" width="220" height="60" rx="5" fill="#F3F4F6" class="laptop-screen"/>
+        <rect x="210" y="200" width="180" height="20" rx="3" fill="#4F46E5" opacity="0.2"/>
+        <rect x="210" y="225" width="150" height="5" rx="2" fill="#4F46E5" opacity="0.2"/>
+        <rect x="210" y="235" width="100" height="5" rx="2" fill="#4F46E5" opacity="0.2"/>
+        <circle cx="285" cy="110" r="5" fill="#FFFFFF" class="eye"/>
+        <circle cx="315" cy="110" r="5" fill="#FFFFFF" class="eye"/>
+        <path d="M285 140 Q300 150 315 140" stroke="#FFFFFF" stroke-width="3" fill="none" class="smile"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="gradient-text">About Me</h2>
+    <div class="about-content">
+      <div class="about-image">
+        <div class="profile-image-container">
+          <img src="image2.jpg" alt="Vishal Choudhary" class="profile-image">
+        </div>
+      </div>
+      <div class="about-text">
+        <p>
+  Hi! I'm Vishal Choudhary, a B.Tech Computer Science student at Parul University, currently in my 3rd year. I have a solid understanding of web development and enjoy building modern, responsive websites. I'm especially passionate about problem-solving and I'm actively learning Data Structures and Algorithms (DSA) in Java. I also enjoy designing clean and interactive frontend user interfaces.
+</p>
+
+        <div class="about-details">
+          <div>
+            <h4>Name:</h4>
+            <p>Vishal Choudhary</p>
+          </div>
+          <div>
+            <h4>Email:</h4>
+            <p>vishalchoudharyiitian1@gmail.com</p>
+          </div>
+          <div>
+            <h4>Education:</h4>
+            <p>B.Tech Computer Science</p>
+          </div>
+          <div>
+            <h4>Location:</h4>
+            <p>Vododara, Gujrat , India</p>
+          </div>
+          <div>
+            <h4>Freelance:</h4>
+            <p>Available</p>
+          </div>
+          <div>
+            <h4>Experience:</h4>
+            <p>2+ Years</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="skills" class="section">
+  <h2 class="gradient-text">My Skills</h2>
+  <div class="skills-container">
+
+    <!-- Frontend -->
+    <div class="skill-category">
+      <div class="category-header">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Frontend</h3>
+      </div>
+      <div class="skills-list">
+        <div class="skill-item"><div class="skill-info"><span>HTML</span><span>90%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 90%; background-color: #4F46E5;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>CSS</span><span>85%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 85%; background-color: #10B981;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>JavaScript</span><span>80%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 80%; background-color: #F59E0B;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>React</span><span>75%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 75%; background-color: #3B82F6;"></div></div></div>
+      </div>
+    </div>
+
+    <!-- Backend Frameworks -->
+    <div class="skill-category">
+      <div class="category-header">
+        <i class="fas fa-server"></i>
+        <h3>Backend Frameworks</h3>
+      </div>
+      <div class="skills-list">
+        <div class="skill-item"><div class="skill-info"><span>Flask</span><span>80%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 80%; background-color: #EC4899;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Django</span><span>75%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 75%; background-color: #14B8A6;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Node.js</span><span>70%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 70%; background-color: #F97316;"></div></div></div>
+      </div>
+    </div>
+
+    <!-- Programming Languages -->
+    <div class="skill-category">
+      <div class="category-header">
+        <i class="fas fa-code"></i>
+        <h3>Programming Languages</h3>
+      </div>
+      <div class="skills-list">
+        <div class="skill-item"><div class="skill-info"><span>Python</span><span>85%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 85%; background-color: #6366F1;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>C</span><span>80%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 80%; background-color: #2563EB;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>C++</span><span>75%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 75%; background-color: #7C3AED;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Java + DSA</span><span>70%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 70%; background-color: #EA580C;"></div></div></div>
+      </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="skill-category">
+      <div class="category-header">
+        <i class="fas fa-database"></i>
+        <h3>Databases</h3>
+      </div>
+      <div class="skills-list">
+        <div class="skill-item"><div class="skill-info"><span>MySQL</span><span>85%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 85%; background-color: #84CC16;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>PostgreSQL</span><span>80%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 80%; background-color: #60A5FA;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>MongoDB</span><span>70%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 70%; background-color: #059669;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>DBMS</span><span>85%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 85%; background-color: #22C55E;"></div></div></div>
+      </div>
+    </div>
+
+    <!-- Others (Tools, OS, CN, etc.) -->
+    <div class="skill-category">
+      <div class="category-header">
+        <i class="fas fa-tools"></i>
+        <h3>Others</h3>
+      </div>
+      <div class="skills-list">
+        <div class="skill-item"><div class="skill-info"><span>Git</span><span>80%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 80%; background-color: #8B5CF6;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Docker</span><span>75%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 75%; background-color: #0EA5E9;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>AWS</span><span>70%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 70%; background-color: #EF4444;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Computer Networks</span><span>80%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 80%; background-color: #0F766E;"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Operating System</span><span>75%</span></div><div class="skill-bar"><div class="skill-progress" style="width: 75%; background-color: #9333EA;"></div></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <section id="projects" class="section">
+    <h2 class="gradient-text">Projects</h2>
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="ai">AI</button>
+      <button class="filter-btn" data-filter="app">Apps</button>
+    </div>
+    <div class="project-grid">  
+
+  <!-- Project 1 -->
+  <div class="project-card" data-category="web">
+    <div class="project-image">
+      <img src="image1.png" alt="Employee Management System">
+    </div>
+    <h3>Employee Management System</h3>
+    <p>A Flask-based application to store and manage employee details including personal information, department, and performance records.</p>
+    <div class="project-links">
+      <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+      <a href="https://github.com/NULLPOINTERCODER/Employee_management_system/upload/main"><i class="fab fa-github"></i> Source Code</a>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project-card" data-category="web">
+    <div class="project-image">
+      <img src="image3.png" alt="PicAlchemy">
+    </div>
+    <h3>PicAlchemy</h3>
+    <p>A Flask + OpenCV image processing tool that converts between formats (JPG, PNG, WEBP), resizes images, and applies filters.</p>
+    <div class="project-links">
+      <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+      <a href="https://github.com/NULLPOINTERCODER/Image_converter"><i class="fab fa-github"></i> Source Code</a>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="project-card" data-category="ai">
+    <div class="project-image">
+      <img src="images/fraud-ai.png" alt="Fraud Detection AI">
+    </div>
+    <h3>Fraud Detection AI</h3>
+    <p>A Django-powered transaction monitoring system using HuggingFace's TinyLlama to detect fraudulent financial activities in real-time.</p>
+    <div class="project-links">
+      <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+      <a href="#"><i class="fab fa-github"></i> Source Code</a>
+    </div>
+  </div>
+
+  <!-- Project 4 -->
+  <div class="project-card" data-category="app">
+    <div class="project-image">
+      <img src="images/taskmaster.png" alt="TaskMaster Mobile">
+    </div>
+    <h3>TaskMaster Mobile</h3>
+    <p>A cross-platform task management application built with React Native featuring offline capabilities and cloud sync.</p>
+    <div class="project-links">
+      <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+      <a href="#"><i class="fab fa-github"></i> Source Code</a>
+    </div>
+  </div>
+
+  <!-- Project 5 -->
+  <div class="project-card" data-category="web">
+    <div class="project-image">
+      <img src="images/ecommerce.png" alt="E-Commerce Platform">
+    </div>
+    <h3>E-Commerce Platform</h3>
+    <p>A full-stack e-commerce solution with React frontend, Node.js backend, and MongoDB database with payment integration.</p>
+    <div class="project-links">
+      <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+      <a href="#"><i class="fab fa-github"></i> Source Code</a>
+    </div>
+  </div>
+
+ <!-- Project 6 -->
+<div class="project-card" data-category="web">
+  <div class="project-image">
+    <img src="images/weather-app.png" alt="Weather Prediction App">
+  </div>
+  <h3>Weather Prediction App</h3>
+  <p>A weather forecasting web app built with Flask and integrated Weather API. It shows real-time weather data, forecasts, air quality, and alerts with a clean and interactive UI.</p>
+  <div class="project-links">
+    <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+    <a href="https://github.com/NULLPOINTERCODER/Whether_app/tree/main/weather%20app"><i class="fab fa-github"></i> Source Code</a>
+  </div>
+</div>
+
+
+</div>
+
+    
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="gradient-text">Contact</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><i class="fas fa-envelope"></i> vishalchoudharyiitian1@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+        <p><i class="fas fa-map-marker-alt"></i> Vadodara , Gujarat , India</p>
+        <div class="social-links">
+          <a href="https://github.com/NULLPOINTERCODER"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vishal-choudhary-45a931344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/i_m_v_patel?utm_source=qr&igsh=MXRncjQzbGh2Nmsydw== "><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-codepen"></i></a>
+        </div>
+      </div>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="primary-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Vishal Choudhary | All Rights Reserved</p>
+    <div class="back-to-top" onclick="scrollToSection('home')">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
